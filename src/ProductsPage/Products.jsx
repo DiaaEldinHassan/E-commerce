@@ -1,5 +1,5 @@
 import React from "react";
-import "./Products.css";
+import "./products.css";
 import { Link } from "react-router-dom";
 import Head from "../Home/Head/Head.jsx";
 import ProductsBody from "./Products/ProductsBody.jsx";
