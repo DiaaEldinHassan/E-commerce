@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductsBody.css";
+import "./productsBody.css";
 import ProductsList from "../ProductsList/ProductsList.jsx";
 import productsList from "../ProductsList/ProductsList.json";
 
