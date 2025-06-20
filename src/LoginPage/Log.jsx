@@ -1,10 +1,10 @@
 import React from "react";
 import accounts from "./Accounts";
 import { useNavigate } from "react-router-dom";
-import quotes from "motivational-quotes";
+
 import "./Log.css";
 
-const quote = quotes.random();
+
 
 export default function Log(props) {
     const [formData, setFormData] = React.useState({
@@ -40,7 +40,7 @@ export default function Log(props) {
     return (
         <div className="login-entry">   
                 <h2>Sign in to your account</h2>
-                <p>{quote}</p>
+                <p>Remember no one can make you feel inferior without your consent. – Eleanor Roosevelt</p>
                 
                         <input
                             name="email"
