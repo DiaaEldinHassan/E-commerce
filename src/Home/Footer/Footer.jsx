@@ -52,6 +52,9 @@ export default function Footer() {
         <input type="email" className="text-lg " placeholder="Enter your email" />
         <button><img src={arrow} loading="lazy" alt="arrow" /></button>
       </div>
+      <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",alignSelf: "center",margin: "1rem 0" }}>
+      <p className="text-center text-sm " style={{color: "var(--BG)"}}>© 2025 E-Fashion. All rights reserved.</p>
+      <p className="text-center text-sm ">Code by <a style={{color: "var(--BG)",textDecoration: "none"}} href="https://github.com/DiaaEldinHassan/E-commerce.git" target="_blank" rel="noopener noreferrer">DiaaEldinHassan</a></p></div>
     </div>
   );
 }
