@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css";
+import "./Footer.css";
 import { account, company, social, help } from "./Footer Data";
 import arrow from "../../assets/arrow.svg";
 
