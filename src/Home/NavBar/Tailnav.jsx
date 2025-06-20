@@ -1,6 +1,6 @@
 import React from "react";
 import Drawer from "./Drawer/Drawer";
-import "./TailNav.css";
+import "./Tailnav.css";
 import navigation, { about, icons } from "./arrays.js";
 import menu from "../../assets/menu.svg";
 import exit from "../../assets/exit.svg";
