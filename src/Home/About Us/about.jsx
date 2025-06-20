@@ -12,7 +12,7 @@ export default function About() {
     <div className="sections">
     <div className="section1">
       <p>
-        At Everlane, we want the right choice to be as easy as putting on a
+        At E-Fashion, we want the right choice to be as easy as putting on a
         great T-shirt. That's why we partner with the best, ethical factories
         around the world. Source only the finest materials. And share those
         stories with you—down to the true cost of every product we make. It's a
