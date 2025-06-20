@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --W00: white;
+  --B100: #f5f4f4;
+  --B200: #dddbdc;
+  --B300: #737373;
+  --B400: #4c4c4b;
+  --B500: #262626;
+  --B600: #000000;
+  --DG:#3a3320;
+  --DG2:#b79164;
+  --OG:#626F47;
+  --LG:#A4B465;
+  --BG:#F5ECD5;
+  --DB:#F0BB78;
+  --DDB:#615722;
+  --TW: #e6ded8;
+  --R500: #d0021b;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  place-items: center;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+@media screen and (max-width:766.5px)
+{
+    body
+    {
+        padding: 1% ;
+    }
+}

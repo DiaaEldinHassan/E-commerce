@@ -1,0 +1,105 @@
+.new-arrivals-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    color: var(--OG);
+    border-bottom: .2rem solid var(--OG);
+}
+
+.new-arrivals-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+   margin:1rem 2rem;
+   
+}
+
+.new-arrivals-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    color: var(--OG);
+    position: relative;
+    width: 20rem;
+    margin-top: 0;
+}
+
+.new-arrivals-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-arrivals-item img,
+.new-arrivals-image-wrapper img {
+    border-radius: 1rem;
+    width: 100%;
+    height: 30rem;
+    display: block;
+}
+
+.new-arrivals-overlay {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 2;
+    cursor: pointer;
+}
+.new-arrivals-overlay button{
+    background-color: var(--OG);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 50%;
+    cursor: pointer;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+}
+.new-arrivals-image-wrapper:hover .new-arrivals-overlay {
+    opacity: 1;
+}
+
+.new-arrivals-caption {
+    margin-top: 1rem;
+    color: var(--OG);
+    font-size: 1.3rem;
+    text-align: center;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+
+.new-arrivals-image-wrapper:hover ~ .new-arrivals-caption {
+    opacity: 0;
+}
+
+@media (max-width: 766.5px) {
+    .new-arrivals-container
+    {
+        text-align: center;
+        
+    }
+}

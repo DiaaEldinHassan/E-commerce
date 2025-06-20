@@ -1,0 +1,102 @@
+.buy-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.buy-container{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    place-items: center;
+    margin: 2rem 0;
+}
+.buy-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 2rem;
+    gap: 2rem;
+    border: 2px solid var(--OG);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 40%;
+}
+.buy-left img{
+    width: 80%;
+    height: 80%;
+    border-radius: 1rem;
+}
+.buy-left h3{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--OG);
+    font-family: 'Edu VIC WA NT Hand Pre', cursive;
+}
+.buy-left h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--BG);
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: var(--OG);
+    font-family: 'Edu VIC WA NT Hand Pre', cursive;
+   
+}
+.buy-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 50%;
+}
+.buy-right p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--OG);
+}
+.buy-right button{
+    background-color: var(--OG);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 80%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.favorite-button{
+    background-color: var(--BG) !important;
+    color: var(--OG) !important;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: 2px solid var(--OG) !important;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 80%;
+}
+.buy-right button:hover{
+    background-color: var(--BG) ;
+    color: var(--OG) ;
+    border: 2px solid var(--OG) ;
+}
+.favorite-button:hover{
+    background-color: var(--OG) !important;
+    color: var(--BG) !important;
+}
+@media (max-width: 766.5px) {
+    .buy-left{
+        width: 100%;
+    }
+    .buy-right{
+        width: 100%;
+    }
+}

@@ -1,0 +1,104 @@
+.featured-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+    border-top: .2rem solid var(--OG);
+    border-bottom: .2rem solid var(--OG);
+}
+
+.featured-images {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.featured-items h1 {
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    color: var(--OG);
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    width: calc(25% - 1rem);
+    min-width: 20rem;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.image-text {
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    color: var(--OG);
+    transition: opacity 0.3s ease;
+}
+
+.images:hover .image-text {
+    opacity: 0;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+}
+
+.images:hover .image-overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    color: white;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.overlay-button {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--OG);
+    color: var(--BG);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+}
+
+.overlay-button:hover {
+    background-color: var(--BG);
+    color: var(--OG);
+    border: 1px solid var(--OG);
+}

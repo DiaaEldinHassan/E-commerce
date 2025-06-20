@@ -1,0 +1,38 @@
+.cover
+{
+    width: 100vw;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background: url("../../assets/Section 01.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.coverText
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+.coverText p
+{
+    margin: 0;
+    font-weight: 300;
+}
+.coverText h1
+{
+    font-weight: 500;
+}
+@media screen and (max-width:766.5px)
+{
+   .coverText
+   {
+    width: 50%;
+   }
+}

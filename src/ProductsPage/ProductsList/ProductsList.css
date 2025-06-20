@@ -1,0 +1,90 @@
+.products-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.products-list h1{
+    font-family:'Edu VIC WA NT Hand Pre', cursive;
+    color: var(--OG);
+}
+.products-list-container{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product-card{
+    width: 20rem;
+    height: fit-content;
+    background-color: var(--B100);
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 0 .1rem .5rem .1rem;
+}
+.product-card img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    
+}
+.product-card-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+   margin-top: 2rem;
+   gap: .5rem;
+}
+.product-card-info button{
+    width: 100%;
+    height: 2rem;
+    background-color: var(--OG);
+    color: var(--B100);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.product-card-info  h3{
+      color: var(--OG);
+      font-family: 'Edu VIC WA NT Hand Pre', cursive;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+}
+.product-card-info p{
+    color: var(--DG);
+    font-family: 'Edu VIC WA NT Hand Pre', cursive;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.favorite-button{
+    background-color: var(--BG) !important;
+    color: var(--OG) !important;
+    border: 1px solid var(--OG) !important;
+    width: 100%;
+}
+.product-card-info button:hover{
+    background-color: var(--BG);
+    color: var(--OG);
+    border: 1px solid var(--OG);
+}
+
+.favorite-button:hover{
+    background-color: var(--OG) !important;
+    color: var(--B100) !important;
+}

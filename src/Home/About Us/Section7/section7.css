@@ -1,0 +1,85 @@
+.section7 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    place-items: center;
+    flex-wrap: wrap;
+}
+.explore-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.explore-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.explore-img img {
+    width: 100%;
+    border-radius: 1rem;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.explore-img:hover img {
+    transform: scale(1.05);
+}
+.explore-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.explore-img:hover::before {
+    opacity: 1;
+}
+.explore-btn {
+    background-color: transparent;
+    color: var(--B600);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--B600);
+    position: absolute;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+.explore-img:hover .explore-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+.explore-item p {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.explore-item:hover p {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+@media screen and (max-width: 766.5px) {
+    .explore {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}

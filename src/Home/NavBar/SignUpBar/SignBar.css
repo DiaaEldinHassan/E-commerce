@@ -1,0 +1,18 @@
+.signBar
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--B600);
+    color: var(--B100);
+    font-size: .8rem;
+}
+.signBar p
+{
+    margin: 1% 0;
+}
+.signBar a
+{
+    display: inline;
+    color: inherit ;
+}

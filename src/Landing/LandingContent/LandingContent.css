@@ -1,0 +1,97 @@
+.landing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+
+}
+.landing-content-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    place-items: end;
+    border-radius: 1rem;
+    width: 65%;
+    height: 40rem;
+    background: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDJNtBfUbtRz5NZd-tefaye-3dep_8Z6cSqqLJgGYLhZ1xSiPxYgepM-FHVi0Th6BMY124-vcmGwkGmn3qPE0_7QcwCoQJEOCGfR8kHmxTPQCcU8R00bpBQYttHmWPhv_k8O1o7sEZbXxk9C0BAC1AgdQGrx8zNsOY76FaikYcH8XSfKFZ7ETD_c5BS-M7o8gU-WvUcbv9k0KMYmK7-VPWvizXRS9dqYkeLBGSZJU6LXUAvZR3RmoHQBrGZKlji8z4KZxhelJftyvQ");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    will-change: transform;
+    transform: translateZ(0);
+    transition: transform 0.3s ease;
+}
+
+.landing-content-head::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+    pointer-events: none;
+    will-change: background-color;
+}
+
+.landing-content-head:hover::before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.landing-content-head-text {
+    position: absolute;
+    bottom: 2rem;
+    left: 0rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    text-align: start;
+    gap: 1rem;
+    padding: 2rem;
+    color: var(--B600);
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
+    will-change: transform;
+    transform: translateZ(0);
+}
+.landing-content-head-text h1{
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    color: var(--OG);
+}
+
+.landing-content-head-text button {
+    width: 40%;
+    height: 3rem;
+    border-radius: 1rem;
+    background-color: var(--OG);
+    color: var(--BG);
+    border: none;
+    cursor: pointer;
+    transition: .2s linear;
+    will-change: transform;
+    transform: translateZ(0);
+}
+.landing-content-head-text button:hover {
+    background-color: var(--BG);
+    color: var(--OG);
+    border: 1px solid var(--OG);
+}
+@media screen and (max-width: 766.5px) {
+    .landing-content-head {
+        width: 90%;
+        height: 30rem;
+    }
+    
+    .landing-content-head-text button {
+        width: 100%;
+    }
+}

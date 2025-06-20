@@ -1,0 +1,11 @@
+.section5{
+    width: 100vw;
+    height: 10rem;
+    background: url("../../../assets/Sec5.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--B600);
+    display: flex;
+    place-items: center;
+    padding: .1rem 0;
+}

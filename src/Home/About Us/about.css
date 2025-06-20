@@ -1,0 +1,30 @@
+.section1
+{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    align-self: center;
+    padding: 3% 0;
+}
+.section1 p
+{
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+.sections
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+@media screen and (max-width:766.5px)
+{
+    .section1 p{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}

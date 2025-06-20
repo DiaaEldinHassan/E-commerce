@@ -1,0 +1,70 @@
+.all-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--DG);
+    color: var(--BG);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.login-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100%; /* Adjust based on your header height */
+}
+.login-page h2{
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+}
+.login-page button{
+background-color: var(--LG);
+color: var(--OG);
+border: none;
+transition: .2s linear;
+}
+.login-page button:hover{
+background-color: var(--DDB);
+}
+.left-container{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    flex-direction: column;
+}
+.left-container input{
+    width: 100%;
+}
+.left-container button{
+    width: 100%;
+    cursor: pointer;
+}
+
+.login-page-right{
+    background: url("../assets/Login/Clothes3.jpg");
+    width: 45%;
+
+    height: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+@media screen and (max-width: 766.5px) {
+    .login-page {
+        flex-direction: column;
+    }
+    
+    .left-container {
+        width: 100%;
+    }
+    
+    .login-page-right {
+        display: none;
+    }
+}

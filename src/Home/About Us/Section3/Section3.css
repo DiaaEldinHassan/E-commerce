@@ -1,0 +1,11 @@
+.section3
+{
+    width: 100vw;
+    height: 10rem;
+    display: flex;
+    background: url("../../../assets/Sec3.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: .1rem 0;
+}

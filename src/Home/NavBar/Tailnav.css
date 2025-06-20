@@ -1,0 +1,68 @@
+.tailNav
+{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: space-around;
+    background-color: var(--BG);
+    border-bottom: .2rem solid var(--OG);
+}
+.wraper
+{
+    display: flex;
+    place-items: center;
+}
+.navBtn
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    place-items: center;
+    gap: 1rem;
+    height: 4rem;
+}
+.navBtn a
+{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--B600);
+}
+.navBtn a:focus
+{
+    border-bottom: .2rem solid var(--OG);
+}
+/* Small screen Button */
+.drawerBtn
+{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height:100%;
+}
+.drawerBtn img
+{
+    filter: invert(1);
+}
+/* Brand name */
+.brand
+{
+    align-self: center;
+    font-weight: 600;
+    rotate: 355deg;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+  font-optical-sizing: auto;
+}
+
+/* Mobile screen */
+@media screen and (max-width: 766.50px)
+{
+    .navBtn
+    {
+        display: none;
+    }
+}

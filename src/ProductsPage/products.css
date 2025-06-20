@@ -1,0 +1,6 @@
+.products-page{
+    width: 100vw;
+   display: flex;
+   flex-direction: column;
+   background-color: var(--B100);
+}

@@ -1,0 +1,49 @@
+.section6{
+    width: 100vw;
+    display: flex;
+    place-items: center;
+    background-color: white;
+}
+.sec6Text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.section6 img {
+    height: auto;
+    width: 50%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 766.5px) {
+    .section6 {
+        flex-direction: column;
+    }
+    .section6 img {
+        display: none;
+    }
+    .sec6Text {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        background: url("../../assets/Sec6.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        place-items: center;
+        margin: 2%;
+        text-align: center;
+    }
+    .sec6Text h6 {
+        font-weight: 500;
+        width: 80%;
+    }
+    .sec6Text div {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,51 @@
+.section2 {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  background-color: var(--TW);
+}
+.section2 img {
+  width: 40%;
+  height: 100%;
+}
+.sec2Text {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 5%;
+}
+
+@media screen and (max-width: 766.5px) {
+  .section2 {
+    flex-direction: row;
+    height: 100%;
+  }
+  .section2 img {
+    display: none;
+  }
+  .sec2Text {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url("../../assets/Sec2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    place-items: center;
+    margin: 2%;
+    text-align: center;
+  }
+  .sec2Text h6 {
+    font-weight: 500;
+    width: 80%;
+  }
+  .sec2Text div {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
